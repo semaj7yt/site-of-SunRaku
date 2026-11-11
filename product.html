@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Карточка товара — Bitrate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="bitrate.css" />
+  </head>
+  <body>
+    <header>
+      <!-- логотип, название и меню -->
+      <nav class="navbar navbar-expand-md site-nav">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt="" />Bitrate</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Домашняя страница</a></li>
+              <li class="nav-item"><a class="nav-link" href="categories.html">Категории</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="product.html">Товары</a></li>
+              <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container py-4">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <!-- изображение товара -->
+          <img id="p-img" class="product-img" src="img/p1.svg" alt="Товар" />
+        </div>
+        <div class="col-md-6">
+          <!-- название, цена, краткое описание -->
+          <h1 id="p-name">Товар</h1>
+          <p class="price fs-3" id="p-price"></p>
+          <p id="p-short"></p>
+          <a class="btn btn-primary btn-lg" href="#order">Заказать</a>
+        </div>
+      </div>
+      <!-- таблица технических характеристик -->
+      <h2 class="mt-5 mb-3">Технические характеристики</h2>
+      <table class="table table-bordered bg-white spec-table"><tbody id="p-specs"></tbody></table>
+
+      <!-- форма обратной связи -->
+      <section id="order" class="panel mt-5">
+        <h2 class="h4 mb-3">Заказать или задать вопрос о товаре</h2>
+        <form id="feedback" class="row g-3">
+          <input type="hidden" id="f-product" name="product" />
+          <div class="col-md-6"><label class="form-label" for="f-name">Имя</label><input class="form-control" id="f-name" name="name" required /></div>
+          <div class="col-md-6"><label class="form-label" for="f-email">Email</label><input class="form-control" id="f-email" type="email" name="email" required /></div>
+          <div class="col-md-6"><label class="form-label" for="f-phone">Телефон</label><input class="form-control" id="f-phone" type="tel" name="phone" /></div>
+          <div class="col-md-6"><label class="form-label" for="f-type">Тип обращения</label><select class="form-select" id="f-type" name="type"><option>Заказать товар</option><option>Вопрос о товаре</option></select></div>
+          <div class="col-12"><label class="form-label" for="f-msg">Сообщение</label><textarea class="form-control" id="f-msg" name="message" rows="4"></textarea></div>
+          <div class="col-12"><button class="btn btn-primary" type="submit">Отправить</button></div>
+          <p class="text-primary mb-0" id="form-msg" role="status"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <!-- контактная информация и соцсети -->
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6"><h3>Bitrate — магазин электроники</h3><p>Горячая линия: <a href="tel:+78005550199">8 (800) 555-01-99</a><br />Email: <a href="mailto:info@bitrate.example">info@bitrate.example</a></p></div>
+          <div class="col-md-6"><h3>Мы в соцсетях</h3><p><a href="https://t.me/" rel="noopener">Telegram</a> · <a href="https://vk.com/" rel="noopener">ВКонтакте</a> · <a href="https://youtube.com/" rel="noopener">YouTube</a></p></div>
+        </div>
+        <p class="small mt-3 mb-0">&copy; 2026 Bitrate</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

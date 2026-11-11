@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bitrate — магазин электроники и бытовой техники</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="bitrate.css" />
+  </head>
+  <body>
+    <header>
+      <!-- логотип, название и меню -->
+      <nav class="navbar navbar-expand-md site-nav">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="img/logo.svg" alt="" />Bitrate</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Домашняя страница</a></li>
+              <li class="nav-item"><a class="nav-link" href="categories.html">Категории</a></li>
+              <li class="nav-item"><a class="nav-link" href="product.html">Товары</a></li>
+              <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container py-4">
+      <h1 class="mb-4">Bitrate — электроника и бытовая техника</h1>
+      <!-- карусель баннеров -->
+      <div id="banners" class="carousel slide mb-5" data-bs-ride="carousel" aria-label="Акции и предложения">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#banners" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
+          <button type="button" data-bs-target="#banners" data-bs-slide-to="1" aria-label="Слайд 2"></button>
+          <button type="button" data-bs-target="#banners" data-bs-slide-to="2" aria-label="Слайд 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active"><div class="banner banner-1"><div><h2>Bitrate X12 — новый флагман</h2><p>Экран 120 Гц и камера 50 Мп. Рассрочка 0% на 12 месяцев.</p><a class="btn btn-light" href="product.html?id=1">Подробнее</a></div></div></div>
+          <div class="carousel-item"><div class="banner banner-2"><div><h2>Скидки на ноутбуки до 15%</h2><p>Для работы, учёбы и игр. Акция до конца месяца.</p><a class="btn btn-light" href="categories.html?cat=laptops">Смотреть ноутбуки</a></div></div></div>
+          <div class="carousel-item"><div class="banner banner-3"><div><h2>Умный дом со скидкой</h2><p>Роботы-пылесосы и бытовая техника — доставка бесплатно.</p><a class="btn btn-light" href="categories.html?cat=appliances">В каталог</a></div></div></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#banners" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Назад</span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#banners" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Вперёд</span></button>
+      </div>
+
+      <!-- популярные товары -->
+      <h2 class="mb-3">Популярные товары</h2>
+      <div class="row g-3 mb-5" id="popular"></div>
+
+      <!-- доставка и оплата -->
+      <h2 class="mb-3">Доставка и оплата</h2>
+      <div class="row g-3">
+        <div class="col-md-6"><div class="panel h-100"><h3 class="h5">Доставка</h3><p class="mb-0">Курьером по Москве — на следующий день, от 5 000 ₽ бесплатно. По России — транспортными компаниями за 2–7 дней. Самовывоз из точек продаж — бесплатно.</p></div></div>
+        <div class="col-md-6"><div class="panel h-100"><h3 class="h5">Оплата</h3><p class="mb-0">Банковской картой на сайте, наличными или картой при получении, рассрочка 0% на 12 месяцев, безналичный расчёт для организаций.</p></div></div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <!-- контактная информация и соцсети -->
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6"><h3>Bitrate — магазин электроники</h3><p>Горячая линия: <a href="tel:+78005550199">8 (800) 555-01-99</a><br />Email: <a href="mailto:info@bitrate.example">info@bitrate.example</a></p></div>
+          <div class="col-md-6"><h3>Мы в соцсетях</h3><p><a href="https://t.me/" rel="noopener">Telegram</a> · <a href="https://vk.com/" rel="noopener">ВКонтакте</a> · <a href="https://youtube.com/" rel="noopener">YouTube</a></p></div>
+        </div>
+        <p class="small mt-3 mb-0">&copy; 2026 Bitrate</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
